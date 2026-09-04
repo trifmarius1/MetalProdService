@@ -1,4 +1,21 @@
-import { defineConfig } from "vite";
+import { defineConfig, type Plugin } from "vite";
+
+const pagesBase = process.env.GITHUB_PAGES === "true" ? "/MetalProdService/" : "/";
+
+function prefixPublicAssets(): Plugin {
+  return {
+    name: "prefix-public-assets",
+    transformIndexHtml(html) {
+      if (pagesBase === "/") return html;
+      return html
+        .replaceAll('href="/favicon', `href="${pagesBase}favicon`)
+        .replaceAll('href="https://metalprodservice.com/"', `href="https://trifmarius1.github.io${pagesBase}"`)
+        .replaceAll('content="/images/', `content="${pagesBase}images/`)
+        .replaceAll('src="/images/', `src="${pagesBase}images/`)
+        .replaceAll("https://metalprodservice.com/", `https://trifmarius1.github.io${pagesBase}`);
+    },
+  };
+}
 
 const securityHeaders: Record<string, string> = {
   "X-Content-Type-Options": "nosniff",
@@ -16,6 +33,8 @@ const securityHeaders: Record<string, string> = {
 };
 
 export default defineConfig({
+  base: pagesBase,
+  plugins: [prefixPublicAssets()],
   server: {
     port: 5173,
     host: true,
