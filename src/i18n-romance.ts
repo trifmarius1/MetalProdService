@@ -668,7 +668,7 @@ export const es: Dict = {
     "48–72 h tras validación STEP para unitarios sencillos. Las piezas 5 ejes o tratadas térmicamente se cotizan con un calendario realista.",
   "faq.6.q": "¿Aceptan trabajo en serie?",
   "faq.6.a":
-    "Sí — de 500 a 100.000+ con utillaje dedicado y SPC. El overhead familiar mantiene honesto el ratio precio/calidad.",
+    "Sí — de 500 a 100.000+ con utillaje dedicado y SPC. Los costes de estructura familiares mantienen honesto el ratio precio/calidad.",
   "footer.tagline": "Mecanizado CNC de precisión • Tratamiento térmico • Serie • Prototipos",
   "footer.rights": "© 2026 Metal Prod Service S.R.L. Todos los derechos reservados.",
   "footer.privacy": "Privacidad y RGPD",
@@ -749,7 +749,7 @@ export const it: Dict = {
     "Niente burocrazia aziendale. I clienti parlano con specialisti di utensili e lavorazioni che comprendono CAD, dilatazione termica e sollecitazioni meccaniche.",
   "about.why3.title": "Prezzi di mercato corretti",
   "about.why3.body":
-    "L’agilità finanziaria familiare significa zero overhead gonfiati. L’efficienza operativa arriva al cliente.",
+    "L’agilità finanziaria familiare significa zero costi di struttura gonfiati. L’efficienza operativa arriva al cliente.",
   "about.why4.title": "Dedizione alla perfezione",
   "about.why4.body":
     "Ispezioniamo il primo pezzo, quello di metà serie e l’ultimo con lo stesso rigore — micrometri calibrati e bracci CMM.",
@@ -1016,7 +1016,7 @@ export const it: Dict = {
     "48–72 ore dopo validazione STEP per pezzi unici semplici. Pezzi 5 assi o trattati termicamente sono quotati con un calendario realistico.",
   "faq.6.q": "Accettate lavoro di serie?",
   "faq.6.a":
-    "Sì — da 500 a 100.000+ con attrezzature dedicate e SPC. L’overhead familiare mantiene onesto il rapporto prezzo/qualità.",
+    "Sì — da 500 a 100.000+ con attrezzature dedicate e SPC. I costi di struttura familiari mantengono onesto il rapporto prezzo/qualità.",
   "footer.tagline": "Lavorazioni CNC di precisione • Trattamento termico • Serie • Prototipi",
   "footer.rights": "© 2026 Metal Prod Service S.R.L. Tutti i diritti riservati.",
   "footer.privacy": "Privacy e GDPR",

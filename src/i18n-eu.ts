@@ -53,7 +53,7 @@ export const de: Dict = {
     "Keine Konzernbürokratie. Kunden sprechen direkt mit Zerspanungs- und Werkzeugspezialisten, die CAD, Wärmedehnung und Spannungen verstehen.",
   "about.why3.title": "Faire Marktpreise",
   "about.why3.body":
-    "Familiäre Kostenstruktur ohne aufgeblähte Overheads. Effizienz geht direkt an den Kunden.",
+    "Familiäre Kostenstruktur ohne aufgeblähte Gemeinkosten. Effizienz geht direkt an den Kunden.",
   "about.why4.title": "Hingabe zur Perfektion",
   "about.why4.body":
     "Wir prüfen das erste, das mittlere und das letzte Teil mit gleicher Strenge — kalibrierte Mikrometer und CMM-Arme.",
@@ -91,7 +91,7 @@ export const de: Dict = {
   "svc.turning.cap1": "Stangenlader-Serienfertigung — Buchsen, Bolzen, Sonderschrauben, Hydraulikverbinder.",
   "svc.turning.cap2": "Angetriebene Werkzeuge für Komplettbearbeitung ohne zweite Aufspannung.",
   "svc.turning.cap3": "Durchmesser von Ø 3 mm bis Ø 450 mm.",
-  "svc.proto.title": "Rapid Prototyping und Einzelteile",
+  "svc.proto.title": "Schnelle Prototypenfertigung und Einzelteile",
   "svc.proto.overview":
     "Schnelle Iteration für F&E, Konstrukteure und Notfallreparaturen.",
   "svc.proto.turnaround": "Lieferung in 48 bis 72 Stunden nach 3D-CAD-/STEP-Validierung.",
@@ -135,7 +135,7 @@ export const de: Dict = {
     "Elektronisch überwachte PID-Regler mit Mehrpunkt-Thermoelementen — gleichmäßige Kurven, ohne Oxidation oder Entkohlung.",
   "mega.milling": "CNC-Fräsen (3-Achs & 5-Achs)",
   "mega.turning": "CNC-Drehen und Automatendrehen",
-  "mega.proto": "Rapid Prototyping und Einzelteile",
+  "mega.proto": "Schnelle Prototypenfertigung und Einzelteile",
   "mega.series": "Großserien und Lose",
   "mega.plastics": "Technische Kunststoffe (POM, PTFE, PVC, PA6)",
   "mega.heat": "Härte- und Anlassöfen",
@@ -401,7 +401,7 @@ export const hu: Dict = {
     "Nincs vállalati bürokrácia. Az ügyfél közvetlenül a szerszám- és megmunkálás-szakértőkkel beszél, akik értik a CAD-modellt, a hőtágulást és a mechanikai feszültségeket.",
   "about.why3.title": "Tisztességes piaci ár",
   "about.why3.body":
-    "A családi működés rugalmassága: nincs felfújt overhead. A hatékonyság az ügyfélhez jut.",
+    "A családi működés rugalmassága: nincsenek felfújt rezsiköltségek. A hatékonyság az ügyfélhez jut.",
   "about.why4.title": "Elkötelezettség a tökéletesség iránt",
   "about.why4.body":
     "Az első, a középső és az utolsó darabot azonos szigorral vizsgáljuk — kalibrált mikrométerrel és CMM-karral.",
@@ -668,7 +668,7 @@ export const hu: Dict = {
     "48–72 óra a STEP validálás után egyszerű egyedi darabokra. Összetett 5 tengelyes vagy hőkezelt alkatrészeket reális naptárral ajánlunk.",
   "faq.6.q": "Vállalnak sorozatot?",
   "faq.6.a":
-    "Igen — 500-tól 100 000+-ig, dedikált készülékekkel és SPC-vel. A családi overhead őszintén tartja az ár–minőség arányt.",
+    "Igen — 500-tól 100 000+-ig, dedikált készülékekkel és SPC-vel. A családi rezsi őszintén tartja az ár–minőség arányt.",
   "footer.tagline": "Precíziós CNC • Hőkezelés • Sorozat • Prototípusok",
   "footer.rights": "© 2026 Metal Prod Service S.R.L. Minden jog fenntartva.",
   "footer.privacy": "Adatvédelem és GDPR",

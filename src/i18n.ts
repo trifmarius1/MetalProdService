@@ -106,13 +106,13 @@ const en: Dict = {
   "svc.milling.finish": "Surface roughness down to Ra 0.8 – 0.4 µm directly off the spindle.",
   "svc.turning.title": "CNC turning & automatic mechanical machining",
   "svc.turning.overview":
-    "High-throughput cylindrical turning, grooving, boring, threading, and part-off operations (strungire & așchiere automată).",
+    "High-throughput cylindrical turning, grooving, boring, threading, and part-off operations.",
   "svc.turning.cap1": "Bar-feeder continuous production for serial turned parts — bushings, pins, custom screws, hydraulic connectors.",
   "svc.turning.cap2": "Live tooling for combined turn-mill operations without secondary fixture setups.",
   "svc.turning.cap3": "Diameters from Ø 3 mm up to Ø 450 mm.",
   "svc.proto.title": "Rapid prototyping & custom 1-off machining",
   "svc.proto.overview":
-    "Rapid iteration for R&D engineers, mechanical designers, and emergency repair operations (piese unicat & prototipuri).",
+    "Rapid iteration for R&D engineers, mechanical designers, and emergency repair operations.",
   "svc.proto.turnaround": "Delivery in as fast as 48 to 72 hours following 3D CAD / STEP validation.",
   "svc.proto.dfm":
     "Design for Manufacturability review of radii, wall thicknesses and tool access — before we cut metal.",
@@ -143,13 +143,13 @@ const en: Dict = {
   "svc.heat.overview":
     "Unlike shops that outsource heat treat — adding delay and distortion — we operate in-house controlled industrial furnaces.",
   "svc.heat.quench":
-    "Quenching (călire): austenitizing 800–1050 °C with controlled soak, then oil, polymer or forced-atmosphere quench.",
+    "Quenching: austenitizing 800–1050 °C with controlled soak, then oil, polymer or forced-atmosphere quench.",
   "svc.heat.temper":
-    "Tempering (revenire): 180–650 °C to relieve stress, eliminate brittleness and hit the exact HRC on the drawing.",
+    "Tempering: 180–650 °C to relieve stress, eliminate brittleness and hit the exact HRC on the drawing.",
   "svc.heat.case":
-    "Case hardening / carburizing (cementare): 58–62 HRC wear surface with a ductile, shock-absorbing core.",
+    "Case hardening / carburizing: 58–62 HRC wear surface with a ductile, shock-absorbing core.",
   "svc.heat.stress":
-    "Stress relieving (detensionare): thermal stabilization before and after heavy machining of long shafts and thin plates.",
+    "Stress relieving: thermal stabilization before and after heavy machining of long shafts and thin plates.",
   "svc.heat.atmosphere":
     "Electronically monitored PID controllers with multi-point thermocouple logging — uniform curves, no oxidation or decarburization.",
   "mega.milling": "CNC milling (3-axis & 5-axis)",
@@ -193,7 +193,7 @@ const en: Dict = {
   "cat.p2.app": "Food processing automation",
   "cat.p2.meta": "Tolerances ISO js6",
   "cat.p3.name": "Splined transmission shaft",
-  "cat.p3.material": "16MnCr5 steel • case hardened (cementat) 60±2 HRC",
+  "cat.p3.material": "16MnCr5 steel • case hardened 60±2 HRC",
   "cat.p3.app": "Agricultural & industrial gearboxes",
   "cat.p3.meta": "Total runout < 0.008 mm",
   "cat.p4.name": "High-temperature cryogenic seal flange",
@@ -246,7 +246,7 @@ const en: Dict = {
   "rfq.step2": "CAD & drawings",
   "rfq.step3": "Delivery & contact",
   "rfq.mode": "Production mode",
-  "rfq.mode.proto": "Single prototype / unicat",
+  "rfq.mode.proto": "Single prototype / one-off",
   "rfq.mode.small": "Small series (10–100 pcs)",
   "rfq.mode.volume": "High-volume series (500–50,000+ pcs)",
   "rfq.material": "Material classification",
@@ -261,8 +261,8 @@ const en: Dict = {
   "rfq.mat.other": "Other",
   "rfq.heat": "Heat treatment needed",
   "rfq.heat.none": "None",
-  "rfq.heat.qt": "Quenching & tempering (călire)",
-  "rfq.heat.case": "Case hardening (cementare)",
+  "rfq.heat.qt": "Quenching & tempering",
+  "rfq.heat.case": "Case hardening",
   "rfq.heat.stress": "Stress relief",
   "rfq.upload": "CAD & technical drawing upload",
   "rfq.uploadHint": "Supported: .STEP .STP .IGES .DWG .DXF .PDF .ZIP — max 50 MB per file.",
@@ -454,13 +454,13 @@ const ro: Dict = {
   "svc.milling.finish": "Rugozitate până la Ra 0,8 – 0,4 µm direct de pe ax.",
   "svc.turning.title": "Strunjire CNC și așchiere mecanică automată",
   "svc.turning.overview":
-    "Strunjire cilindrică de mare debit, canelare, alezare, filetare și retezare (strungire & așchiere automată).",
+    "Strunjire cilindrică de mare debit, canelare, alezare, filetare și retezare.",
   "svc.turning.cap1": "Producție continuă cu alimentator de bară pentru piese de serie — bucșe, pini, șuruburi, conectori hidraulici.",
   "svc.turning.cap2": "Scule motorizate pentru operații combinate strung-freză fără repriză secundară.",
   "svc.turning.cap3": "Diametre de la Ø 3 mm până la Ø 450 mm.",
   "svc.proto.title": "Prototipare rapidă și piese unicat",
   "svc.proto.overview":
-    "Iterație rapidă pentru ingineri R&D, proiectanți mecanici și reparații de urgență (piese unicat & prototipuri).",
+    "Iterație rapidă pentru ingineri R&D, proiectanți mecanici și reparații de urgență.",
   "svc.proto.turnaround": "Livrare în 48–72 de ore după validarea CAD 3D / STEP.",
   "svc.proto.dfm":
     "Analiză DFM a razelor, grosimilor de perete și accesului sculei — înainte de a tăia metalul.",
@@ -684,10 +684,10 @@ const ro: Dict = {
     "POM/Delrin, PTFE/Teflon, PVC industrial și PA6/Nylon — roți dințate, garnituri, role, distribuitoare și izolatori.",
   "faq.5.q": "Care este termenul tipic pentru un prototip?",
   "faq.5.a":
-    "48–72 de ore după validarea STEP pentru piese unicat straightforward. Piesele complexe pe 5 axe sau tratate termic se cotează cu un calendar realist, nu unul optimist.",
+    "48–72 de ore după validarea STEP pentru piese unicat simple. Piesele complexe pe 5 axe sau tratate termic se cotează cu un calendar realist, nu unul optimist.",
   "faq.6.q": "Luați și lucrări de serie?",
   "faq.6.a":
-    "Da — 500 până la 100.000+, cu dispozitive dedicate și SPC. Overhead-ul unei firme de familie ține raportul preț/calitate onest.",
+    "Da — 500 până la 100.000+, cu dispozitive dedicate și SPC. Cheltuielile de regie ale unei firme de familie țin raportul preț/calitate onest.",
   "footer.tagline": "Prelucrări CNC de precizie • Tratament termic • Serie • Prototipuri",
   "footer.rights": "© 2026 Metal Prod Service S.R.L. Toate drepturile rezervate.",
   "footer.privacy": "Confidențialitate și GDPR",

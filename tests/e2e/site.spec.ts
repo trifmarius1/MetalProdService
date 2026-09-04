@@ -161,6 +161,14 @@ test.describe("language regression", () => {
       const texts = await page.locator("[data-i18n]").allTextContents();
       const leaked = texts.filter((s) => s.includes("undefined") || /^[a-z]+\.[a-z]/.test(s));
       expect(leaked, leaked.join(", ")).toEqual([]);
+      if (lang === "en") {
+        await expect(page.locator("#svc-turning")).not.toContainText(/strungire|așchiere|unicat|prototipuri|călire|cementare/i);
+        await expect(page.locator("#svc-proto")).not.toContainText(/piese unicat|prototipuri/i);
+      }
+      if (lang === "ro") {
+        await expect(page.locator("#svc-turning")).not.toContainText(/straightforward|overhead/i);
+        await expect(page.locator("body")).not.toContainText(/straightforward/i);
+      }
     });
   }
 });

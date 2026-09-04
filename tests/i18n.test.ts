@@ -53,4 +53,57 @@ describe("i18n completeness", () => {
     expect(LOCALE_META.hu.native).toBe("Magyar");
     expect(LOCALE_META.de.native).toBe("Deutsch");
   });
+
+  it("English copy has no Romanian glosses", () => {
+    const banned = [
+      "strungire",
+      "așchiere",
+      "călire",
+      "revenire",
+      "cementare",
+      "detensionare",
+      "unicat",
+      "prototipuri",
+      "piese unicat",
+      "cementat",
+    ];
+    for (const [key, value] of Object.entries(dictionaries.en)) {
+      const lower = value.toLowerCase();
+      for (const word of banned) {
+        expect(lower, `en.${key}`).not.toContain(word);
+      }
+    }
+  });
+
+  it("Romanian copy has no leftover English words", () => {
+    const banned = ["straightforward", "overhead-ul", "overhead"];
+    for (const [key, value] of Object.entries(dictionaries.ro)) {
+      const lower = value.toLowerCase();
+      for (const word of banned) {
+        expect(lower, `ro.${key}`).not.toContain(word);
+      }
+    }
+  });
+
+  it("non-Romanian locales do not mix in Romanian process glosses", () => {
+    const leak = /strungire|așchiere automată|piese unicat|prototipuri\)/i;
+    for (const locale of ["de", "hu", "fr", "es", "it"] as const) {
+      for (const [key, value] of Object.entries(dictionaries[locale])) {
+        expect(value, `${locale}.${key}`).not.toMatch(leak);
+      }
+    }
+  });
+
+  it("renders the turning overview in the selected language only", () => {
+    expect(t("en", "svc.turning.overview")).toBe(
+      "High-throughput cylindrical turning, grooving, boring, threading, and part-off operations.",
+    );
+    expect(t("en", "svc.turning.overview")).not.toMatch(/strungire|așchiere|unicat/i);
+    expect(t("ro", "svc.turning.overview")).toMatch(/Strunjire/i);
+    expect(t("de", "svc.turning.overview")).toMatch(/Drehen|Abstechen/i);
+    expect(t("fr", "svc.turning.overview")).toMatch(/Tournage/i);
+    expect(t("es", "svc.turning.overview")).toMatch(/Torneado/i);
+    expect(t("it", "svc.turning.overview")).toMatch(/Tornitura/i);
+    expect(t("hu", "svc.turning.overview")).toMatch(/esztergálás/i);
+  });
 });
