@@ -1,0 +1,26 @@
+{
+  "name": "metal-prod-service",
+  "private": true,
+  "version": "2.6.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "start": "vite preview --host --port 4173",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host --port 4173",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:load": "node tests/load.mjs"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/three": "^0.170.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
+  }
+}

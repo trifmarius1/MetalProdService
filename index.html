@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="description" content="Metal Prod Service — high-precision CNC machining, custom prototyping, series production and in-house heat treatment in Satu Mare, Romania. ISO 9001:2015. ±0.005 mm." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://metalprodservice.com/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link rel="stylesheet" href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800,900|jetbrains-mono:400,500,600" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Metal Prod Service — Precision CNC Machining & Heat Treatment" />
+    <meta property="og:description" content="Family-owned EU machine shop. CNC milling, turning, technical plastics, in-house quenching. Quote in 24h." />
+    <meta property="og:image" content="/images/FactoryPhoto.JPG" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Metal Prod Service — Precision CNC Machining & Heat Treatment</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ManufacturingBusiness",
+        "name": "Metal Prod Service S.R.L.",
+        "url": "https://metalprodservice.com/",
+        "email": "rfq@metalprodservice.com",
+        "foundingDate": "2005",
+        "vatID": "RO18205726",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Parc Industrial Sud nr. 2/B",
+          "addressLocality": "Satu Mare",
+          "postalCode": "440186",
+          "addressCountry": "RO"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 47.753, "longitude": 22.886 },
+        "openingHours": ["Mo-Fr 07:00-19:00", "Sa 08:00-14:00"],
+        "areaServed": "EU",
+        "knowsLanguage": ["en", "ro", "de", "hu", "fr", "es", "it"]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="loader" id="loader" role="status" aria-live="polite" aria-hidden="false">
+      <svg class="logo-mark" viewBox="0 0 100 100" width="92" height="92" aria-hidden="true">
+        <circle class="logo-ring" cx="50" cy="50" r="46" fill="none" stroke="#334155" stroke-width="2.5" stroke-dasharray="4 3" />
+        <path class="logo-arc" d="M 20,50 A 30,30 0 1,1 80,50" fill="none" stroke="#0284C7" stroke-width="6" stroke-linecap="round" />
+        <path class="logo-m" d="M 26 65 L 36 32 L 50 52 L 64 32 L 74 65" fill="none" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+        <circle class="logo-core" cx="50" cy="38" r="5.5" fill="#F59E0B" />
+      </svg>
+    </div>
+    <a class="skip" href="#main" data-i18n="header.skip">Skip to content</a>
+
+    <header class="header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" id="logo-home" aria-label="Metal Prod Service — home" data-i18n-aria="aria.logo">
+          <svg class="logo-mark" viewBox="0 0 100 100" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0284C7" />
+                <stop offset="100%" stop-color="#0369A1" />
+              </linearGradient>
+              <linearGradient id="flameGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#D97706" />
+                <stop offset="100%" stop-color="#F59E0B" />
+              </linearGradient>
+            </defs>
+            <circle class="logo-ring" cx="50" cy="50" r="46" fill="none" stroke="#334155" stroke-width="2.5" stroke-dasharray="4 3" />
+            <path class="logo-arc" d="M 20,50 A 30,30 0 1,1 80,50" fill="none" stroke="url(#metalGrad)" stroke-width="6" stroke-linecap="round" />
+            <path class="logo-m" d="M 26 65 L 36 32 L 50 52 L 64 32 L 74 65" fill="none" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle class="logo-core" cx="50" cy="38" r="5.5" fill="url(#flameGrad)" />
+            <line x1="50" y1="10" x2="50" y2="22" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="10" y1="50" x2="22" y2="50" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round" />
+            <line x1="78" y1="50" x2="90" y2="50" stroke="#0284C7" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <span class="wordmark">
+            <strong>METAL PROD <span>SERVICE</span></strong>
+            <small data-i18n="footer.tagline">PRECISION CNC MACHINING • HEAT TREATMENT • SERIES • PROTOTYPES</small>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#top" data-nav="home" data-i18n="nav.home">Home</a>
+          <a href="#about" data-nav="about" data-i18n="nav.about">About Us</a>
+          <div class="mega-wrap">
+            <button class="nav-btn" id="svc-btn" aria-expanded="false" aria-controls="mega" data-i18n="nav.services">Services</button>
+            <div class="mega" id="mega" role="menu">
+              <a href="#svc-milling" role="menuitem"><span><strong data-i18n="mega.milling">CNC milling (3-axis & 5-axis)</strong></span></a>
+              <a href="#svc-turning" role="menuitem"><span><strong data-i18n="mega.turning">CNC turning & automatic screw machining</strong></span></a>
+              <a href="#svc-proto" role="menuitem"><span><strong data-i18n="mega.proto">Rapid prototyping & custom units</strong></span></a>
+              <a href="#svc-series" role="menuitem"><span><strong data-i18n="mega.series">High-volume batch & series</strong></span></a>
+              <a href="#svc-plastics" role="menuitem"><span><strong data-i18n="mega.plastics">Technical plastics (POM, PTFE, PVC, PA6)</strong></span></a>
+              <a href="#svc-heat" role="menuitem"><span><strong data-i18n="mega.heat">Industrial quenching & tempering furnaces</strong></span></a>
+            </div>
+          </div>
+          <a href="#catalogue" data-nav="catalogue" data-i18n="nav.catalogue">Catalogue</a>
+          <a href="#equipment" data-nav="equipment" data-i18n="nav.equipment">Equipment</a>
+          <a href="#contact" data-nav="contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-tools">
+          <div class="lang" id="lang-wrap">
+            <button class="icon-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria="aria.language" title="Language">EN</button>
+            <div class="lang-menu" id="lang-menu" role="listbox"></div>
+          </div>
+          <button class="icon-btn" id="theme-btn" data-i18n-aria="theme.dark" title="Theme">◐</button>
+          <a class="cta header-cta" href="#rfq"><span data-i18n="cta.quote">Request Offer</span></a>
+          <button class="icon-btn burger" id="burger" data-i18n-aria="header.menu" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="backdrop" id="backdrop" hidden></div>
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <button class="icon-btn" id="drawer-close" data-i18n-aria="header.close">✕</button>
+      <a href="#top" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#catalogue" data-i18n="nav.catalogue">Catalogue</a>
+      <a href="#equipment" data-i18n="nav.equipment">Equipment</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a class="cta" href="#rfq" data-i18n="cta.quote">Request Offer</a>
+    </aside>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <img class="hero-photo" src="/images/FactoryPhoto.JPG" alt="" width="1600" height="900" fetchpriority="high" />
+        <div class="hero-shade"></div>
+        <div class="hero-grid"></div>
+        <div class="scan" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+          <div>
+            <div class="badges">
+              <span class="chip" data-i18n="hero.badge">Precision Engineered in the EU</span>
+              <span class="chip iso" data-i18n="hero.iso">Certified ISO 9001:2015 Standards</span>
+            </div>
+            <h1 data-i18n="hero.title">High-Precision CNC Machining, Custom Prototyping & Series Production</h1>
+            <p class="sub" data-i18n="hero.sub">Built on family dedication, engineering seriousness, and technological mastery. We transform solid metals and technical plastics into micron-accurate components with certified in-house heat treatment.</p>
+            <div class="hero-actions">
+              <a class="cta" href="#rfq">
+                <span data-i18n="hero.ctaPrimary">Request a Free Technical Quote</span>
+              </a>
+              <a class="cta-ghost" href="#equipment" data-i18n="hero.ctaSecondary">Explore Our Plant & Machine Park</a>
+            </div>
+            <p class="lead hero-hint" data-i18n="hero.ctaHint">CAD / technical drawing analysis in 24h</p>
+          </div>
+          <div class="stage" aria-label="Interactive 3D precision mark" data-i18n-aria="aria.3d">
+            <canvas id="hero-3d"></canvas>
+            <div class="stage-fallback" id="stage-fallback">
+              <svg class="logo-mark" viewBox="0 0 100 100" aria-hidden="true">
+                <circle class="logo-ring" cx="50" cy="50" r="46" fill="none" stroke="#334155" stroke-width="2.5" stroke-dasharray="4 3" />
+                <path class="logo-arc" d="M 20,50 A 30,30 0 1,1 80,50" fill="none" stroke="#0284C7" stroke-width="6" stroke-linecap="round" />
+                <path class="logo-m" d="M 26 65 L 36 32 L 50 52 L 64 32 L 74 65" fill="none" stroke="#F8FAFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                <circle class="logo-core" cx="50" cy="38" r="5.5" fill="#F59E0B" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="trust" id="trust">
+        <article><b class="mono" data-i18n="trust.tol.value">±0.005 mm</b><span data-i18n="trust.tol.label">Machining tolerance</span></article>
+        <article><b class="mono" data-i18n="trust.heat.value">100%</b><span data-i18n="trust.heat.label">In-house heat treatment & quenching</span></article>
+        <article><b class="mono" data-i18n="trust.vol.value">1 – 100,000+</b><span data-i18n="trust.vol.label">Prototypes to high-volume series</span></article>
+        <article><b class="mono" data-i18n="trust.fast.value">48 h</b><span data-i18n="trust.fast.label">Fast-track prototype dispatch</span></article>
+      </div>
+
+      <section id="about">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="about.kicker">Tradition, heritage & values</span>
+            <h2 data-i18n="about.title">The story of Metal Prod Service</h2>
+          </div>
+          <div class="about-grid">
+            <div>
+              <p class="quote" data-i18n="about.quote">True precision is not just about programmable machines; it is about the dedication, character, and honesty of the people who operate them.</p>
+              <p data-i18n="about.p1">Metal Prod Service was established with a foundational mission: to provide the European and domestic mechanical industries with uncompromising precision parts manufactured with familial care, punctuality, and competitive pricing.</p>
+              <p data-i18n="about.p2">Over decades of generational industrial experience, we expanded from basic mechanical workshops into a high-technology CNC machining and thermal treatment facility. As an independent, family-owned business, we do not view clients as simple order numbers. Every project — from a single custom prototype shaft for a broken production line to 50,000 serialized precision screws — receives personal oversight from our senior engineering team.</p>
+              <div class="values">
+                <article class="value"><h3 data-i18n="about.why1.title">Uncompromising seriousness & integrity</h3><p data-i18n="about.why1.body">When we quote a delivery date, we meet it. When we guarantee an H7 tolerance or 60 HRC surface hardness, every unit is certified.</p></article>
+                <article class="value"><h3 data-i18n="about.why2.title">Direct engineer-to-engineer dialogue</h3><p data-i18n="about.why2.body">No layered corporate bureaucracy. Clients speak directly with tooling and machining specialists who understand CAD models, thermal expansion, and mechanical stresses.</p></article>
+                <article class="value"><h3 data-i18n="about.why3.title">Fair market pricing</h3><p data-i18n="about.why3.body">Family-owned financial agility means zero inflated overheads. We pass operational efficiencies directly to our clients.</p></article>
+                <article class="value"><h3 data-i18n="about.why4.title">Dedication to perfection</h3><p data-i18n="about.why4.body">We inspect the first part, the middle part, and the final run with equal rigor using calibrated micrometric gauges and CMM arms.</p></article>
+              </div>
+              <div class="stats">
+                <div class="stat"><b data-i18n="about.stat1.value">2005</b><span data-i18n="about.stat1.label">Founded in Satu Mare</span></div>
+                <div class="stat"><b data-i18n="about.stat2.value">±5 µm</b><span data-i18n="about.stat2.label">Ultra-precision capability</span></div>
+                <div class="stat"><b data-i18n="about.stat3.value">24 h</b><span data-i18n="about.stat3.label">Engineering quote response</span></div>
+                <div class="stat"><b data-i18n="about.stat4.value">2 shifts</b><span data-i18n="about.stat4.label">Production 07:00–19:00</span></div>
+              </div>
+            </div>
+            <div class="gallery" id="about-gallery">
+              <figure class="shot">
+                <img src="/images/FactoryPhoto.JPG" alt="Metal Prod Service factory exterior" width="1200" height="750" data-i18n-alt="about.exterior" />
+                <figcaption data-i18n="about.exterior">Factory exterior — Precision Industrial Park, Satu Mare</figcaption>
+              </figure>
+              <figure class="shot">
+                <img src="/images/Factory_Interior.JPG" alt="CNC production floor" width="1200" height="675" data-i18n-alt="about.interior" />
+                <figcaption data-i18n="about.interior">Production floor — CNC milling lines, turning cells and metrology</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="industries">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="ind.kicker">Sectors we serve</span>
+            <h2 data-i18n="ind.title">Engineered for industries that cannot accept deviation</h2>
+          </div>
+          <div class="industries">
+            <div class="ind" data-i18n="ind.aero">Aerospace & aerial robotics</div>
+            <div class="ind" data-i18n="ind.auto">Automotive & hydraulics</div>
+            <div class="ind" data-i18n="ind.medical">Medical devices</div>
+            <div class="ind" data-i18n="ind.agri">Agricultural gearboxes</div>
+            <div class="ind" data-i18n="ind.marine">Marine & offshore</div>
+            <div class="ind" data-i18n="ind.industrial">Industrial machinery</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="services.kicker">Manufacturing capabilities</span>
+            <h2 data-i18n="services.title">Six disciplines. One accountable shop floor.</h2>
+            <p class="lead" data-i18n="services.lead">From 3-axis prismatics to in-house quenching, every process stays under our roof — so tolerances, hardness and lead times stay under our control.</p>
+          </div>
+          <div class="svc-grid">
+            <article class="svc" id="svc-milling">
+              <h3 data-i18n="svc.milling.title">Precision CNC milling (3-axis & 5-axis)</h3>
+              <p data-i18n="svc.milling.overview">High-speed, ultra-rigid milling of complex geometries, prismatics, deep pockets, and contouring.</p>
+              <details class="tech"><summary data-i18n="svc.more">Technical details</summary>
+                <ul>
+                  <li data-i18n="svc.milling.materials"></li>
+                  <li data-i18n="svc.milling.tolerances"></li>
+                  <li data-i18n="svc.milling.finish"></li>
+                </ul>
+              </details>
+            </article>
+            <article class="svc" id="svc-turning">
+              <h3 data-i18n="svc.turning.title">CNC turning & automatic mechanical machining</h3>
+              <p data-i18n="svc.turning.overview">High-throughput cylindrical turning, grooving, boring, threading, and part-off operations.</p>
+              <details class="tech"><summary data-i18n="svc.more">Technical details</summary>
+                <ul>
+                  <li data-i18n="svc.turning.cap1"></li>
+                  <li data-i18n="svc.turning.cap2"></li>
+                  <li data-i18n="svc.turning.cap3"></li>
+                </ul>
+              </details>
+            </article>
+            <article class="svc" id="svc-proto">
+              <h3 data-i18n="svc.proto.title">Rapid prototyping & custom 1-off machining</h3>
+              <p data-i18n="svc.proto.overview">Rapid iteration for R&D engineers, mechanical designers, and emergency repair operations.</p>
+              <details class="tech"><summary data-i18n="svc.more">Technical details</summary>
+                <ul>
+                  <li data-i18n="svc.proto.turnaround"></li>
+                  <li data-i18n="svc.proto.dfm"></li>
+                </ul>
+              </details>
+            </article>
+            <article class="svc" id="svc-series">
+              <h3 data-i18n="svc.series.title">High-volume serial production</h3>
+              <p data-i18n="svc.series.overview">Industrialized manufacturing for 500 to 100,000+ pieces with dedicated fixturing and SPC.</p>
+              <details class="tech"><summary data-i18n="svc.more">Technical details</summary>
+                <ul><li data-i18n="svc.series.products"></li></ul>
+              </details>
+            </article>
+            <article class="svc" id="svc-plastics">
+              <h3 data-i18n="svc.plastics.title">Technical plastics CNC machining</h3>
+              <p data-i18n="svc.plastics.overview">Engineering plastics replacing metals in robotics, food handling, medical devices and chemical processing.</p>
+            </article>
+            <article class="svc heat" id="svc-heat">
+              <h3 data-i18n="svc.heat.title">Industrial heat treatment & quenching</h3>
+              <p data-i18n="svc.heat.overview">Unlike shops that outsource heat treat, we operate in-house controlled industrial furnaces.</p>
+              <details class="tech"><summary data-i18n="svc.more">Technical details</summary>
+                <ul>
+                  <li data-i18n="svc.heat.quench"></li>
+                  <li data-i18n="svc.heat.temper"></li>
+                  <li data-i18n="svc.heat.case"></li>
+                  <li data-i18n="svc.heat.stress"></li>
+                  <li data-i18n="svc.heat.atmosphere"></li>
+                </ul>
+              </details>
+            </article>
+          </div>
+          <div class="plastics">
+            <article><h4 data-i18n="svc.pom.name">POM</h4><p data-i18n="svc.pom.props"></p><p class="meta" data-i18n="svc.pom.apps"></p></article>
+            <article><h4 data-i18n="svc.ptfe.name">PTFE</h4><p data-i18n="svc.ptfe.props"></p><p class="meta" data-i18n="svc.ptfe.apps"></p></article>
+            <article><h4 data-i18n="svc.pvc.name">PVC</h4><p data-i18n="svc.pvc.props"></p><p class="meta" data-i18n="svc.pvc.apps"></p></article>
+            <article><h4 data-i18n="svc.pa6.name">PA6</h4><p data-i18n="svc.pa6.props"></p><p class="meta" data-i18n="svc.pa6.apps"></p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="process.kicker">From drawing to dispatch</span>
+            <h2 data-i18n="process.title">A golden thread of accountability</h2>
+          </div>
+          <div class="process">
+            <article class="step"><em>01</em><h3 data-i18n="process.1.title"></h3><p data-i18n="process.1.body"></p></article>
+            <article class="step"><em>02</em><h3 data-i18n="process.2.title"></h3><p data-i18n="process.2.body"></p></article>
+            <article class="step"><em>03</em><h3 data-i18n="process.3.title"></h3><p data-i18n="process.3.body"></p></article>
+            <article class="step"><em>04</em><h3 data-i18n="process.4.title"></h3><p data-i18n="process.4.body"></p></article>
+            <article class="step"><em>05</em><h3 data-i18n="process.5.title"></h3><p data-i18n="process.5.body"></p></article>
+            <article class="step"><em>06</em><h3 data-i18n="process.6.title"></h3><p data-i18n="process.6.body"></p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalogue">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="cat.kicker">Product catalogue</span>
+            <h2 data-i18n="cat.title">Parts we have already proven on the spindle</h2>
+            <p class="lead" data-i18n="cat.lead"></p>
+          </div>
+          <div class="filters" id="filters" role="toolbar" aria-label="Catalogue filters">
+            <button type="button" data-filter="all" aria-pressed="true" data-i18n="cat.filter.all">All</button>
+            <button type="button" data-filter="screws" aria-pressed="false" data-i18n="cat.filter.screws">Custom screws & fasteners</button>
+            <button type="button" data-filter="shafts" aria-pressed="false" data-i18n="cat.filter.shafts">Shafts & bushings</button>
+            <button type="button" data-filter="plastics" aria-pressed="false" data-i18n="cat.filter.plastics">Plastics</button>
+          </div>
+          <div class="cat-grid" id="cat-grid">
+            <article class="card" data-cat="screws">
+              <img src="/images/products/screws.jpg" alt="" width="800" height="600" loading="lazy" data-i18n-alt="cat.p1.name" />
+              <div class="card-body">
+                <h3 data-i18n="cat.p1.name"></h3>
+                <p class="meta"><span data-i18n="cat.material"></span>: <span data-i18n="cat.p1.material"></span></p>
+                <p class="meta"><span data-i18n="cat.application"></span>: <span data-i18n="cat.p1.app"></span></p>
+                <p class="meta" data-i18n="cat.p1.meta"></p>
+                <a class="cta-ghost" href="#rfq" data-i18n="cat.quoteThis"></a>
+              </div>
+            </article>
+            <article class="card" data-cat="plastics">
+              <img src="/images/products/pom-gears.jpg" alt="" width="800" height="600" loading="lazy" data-i18n-alt="cat.p2.name" />
+              <div class="card-body">
+                <h3 data-i18n="cat.p2.name"></h3>
+                <p class="meta"><span data-i18n="cat.material"></span>: <span data-i18n="cat.p2.material"></span></p>
+                <p class="meta"><span data-i18n="cat.application"></span>: <span data-i18n="cat.p2.app"></span></p>
+                <p class="meta" data-i18n="cat.p2.meta"></p>
+                <a class="cta-ghost" href="#rfq" data-i18n="cat.quoteThis"></a>
+              </div>
+            </article>
+            <article class="card" data-cat="shafts">
+              <img src="/images/products/shaft.jpg" alt="" width="800" height="600" loading="lazy" data-i18n-alt="cat.p3.name" />
+              <div class="card-body">
+                <h3 data-i18n="cat.p3.name"></h3>
+                <p class="meta"><span data-i18n="cat.material"></span>: <span data-i18n="cat.p3.material"></span></p>
+                <p class="meta"><span data-i18n="cat.application"></span>: <span data-i18n="cat.p3.app"></span></p>
+                <p class="meta" data-i18n="cat.p3.meta"></p>
+                <a class="cta-ghost" href="#rfq" data-i18n="cat.quoteThis"></a>
+              </div>
+            </article>
+            <article class="card" data-cat="plastics">
+              <img src="/images/products/ptfe-flange.jpg" alt="" width="800" height="600" loading="lazy" data-i18n-alt="cat.p4.name" />
+              <div class="card-body">
+                <h3 data-i18n="cat.p4.name"></h3>
+                <p class="meta"><span data-i18n="cat.material"></span>: <span data-i18n="cat.p4.material"></span></p>
+                <p class="meta"><span data-i18n="cat.application"></span>: <span data-i18n="cat.p4.app"></span></p>
+                <p class="meta" data-i18n="cat.p4.meta"></p>
+                <a class="cta-ghost" href="#rfq" data-i18n="cat.quoteThis"></a>
+              </div>
+            </article>
+            <article class="card" data-cat="shafts">
+              <img src="/images/products/al-bracket.jpg" alt="" width="800" height="600" loading="lazy" data-i18n-alt="cat.p5.name" />
+              <div class="card-body">
+                <h3 data-i18n="cat.p5.name"></h3>
+                <p class="meta"><span data-i18n="cat.material"></span>: <span data-i18n="cat.p5.material"></span></p>
+                <p class="meta"><span data-i18n="cat.application"></span>: <span data-i18n="cat.p5.app"></span></p>
+                <p class="meta" data-i18n="cat.p5.meta"></p>
+                <a class="cta-ghost" href="#rfq" data-i18n="cat.quoteThis"></a>
+              </div>
+            </article>
+            <article class="card" data-cat="screws">
+              <img src="/images/products/manifold.jpg" alt="" width="800" height="600" loading="lazy" data-i18n-alt="cat.p6.name" />
+              <div class="card-body">
+                <h3 data-i18n="cat.p6.name"></h3>
+                <p class="meta"><span data-i18n="cat.material"></span>: <span data-i18n="cat.p6.material"></span></p>
+                <p class="meta"><span data-i18n="cat.application"></span>: <span data-i18n="cat.p6.app"></span></p>
+                <p class="meta" data-i18n="cat.p6.meta"></p>
+                <a class="cta-ghost" href="#rfq" data-i18n="cat.quoteThis"></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipment">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="eq.kicker">Plant technology</span>
+            <h2 data-i18n="eq.title">Machine park, furnaces and metrology</h2>
+            <p class="lead" data-i18n="eq.lead"></p>
+          </div>
+          <figure class="eq-photo">
+            <img src="/images/Factory_Interior.JPG" alt="" width="1600" height="900" loading="lazy" data-i18n-alt="eq.floorCaption" />
+            <figcaption data-i18n="eq.floorCaption"></figcaption>
+          </figure>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="eq.col.category"></th>
+                  <th data-i18n="eq.col.model"></th>
+                  <th data-i18n="eq.col.params"></th>
+                  <th data-i18n="eq.col.cap"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td data-i18n="eq.r1.cat"></td><td data-i18n="eq.r1.model"></td><td data-i18n="eq.r1.params"></td><td data-i18n="eq.r1.cap"></td></tr>
+                <tr><td data-i18n="eq.r2.cat"></td><td data-i18n="eq.r2.model"></td><td data-i18n="eq.r2.params"></td><td data-i18n="eq.r2.cap"></td></tr>
+                <tr><td data-i18n="eq.r3.cat"></td><td data-i18n="eq.r3.model"></td><td data-i18n="eq.r3.params"></td><td data-i18n="eq.r3.cap"></td></tr>
+                <tr><td data-i18n="eq.r4.cat"></td><td data-i18n="eq.r4.model"></td><td data-i18n="eq.r4.params"></td><td data-i18n="eq.r4.cap"></td></tr>
+                <tr><td data-i18n="eq.r5.cat"></td><td data-i18n="eq.r5.model"></td><td data-i18n="eq.r5.params"></td><td data-i18n="eq.r5.cap"></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-hint" data-i18n="eq.swipe">Swipe sideways to see every column</p>
+        </div>
+      </section>
+
+      <section id="rfq">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="rfq.kicker">RFQ engine</span>
+            <h2 data-i18n="rfq.title">Request a technical offer in three steps</h2>
+            <p class="lead" data-i18n="rfq.lead"></p>
+          </div>
+          <div class="rfq-box" id="rfq-box">
+            <ol class="progress" id="rfq-progress" role="tablist">
+              <li>
+                <button type="button" class="progress-tab active" role="tab" data-goto="1" aria-selected="true" data-i18n="rfq.step1">Part specifications</button>
+              </li>
+              <li>
+                <button type="button" class="progress-tab" role="tab" data-goto="2" aria-selected="false" data-i18n="rfq.step2">CAD & drawings</button>
+              </li>
+              <li>
+                <button type="button" class="progress-tab" role="tab" data-goto="3" aria-selected="false" data-i18n="rfq.step3">Delivery & contact</button>
+              </li>
+            </ol>
+            <form id="rfq-form" novalidate>
+              <input class="hp" type="text" name="company_website" id="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <div class="form-grid" data-step="1">
+                <label class="span-all"><span data-i18n="rfq.mode"></span>
+                  <div class="seg" id="mode-seg">
+                    <label><input type="radio" name="mode" value="proto" checked /> <span data-i18n="rfq.mode.proto"></span></label>
+                    <label><input type="radio" name="mode" value="small" /> <span data-i18n="rfq.mode.small"></span></label>
+                    <label><input type="radio" name="mode" value="volume" /> <span data-i18n="rfq.mode.volume"></span></label>
+                  </div>
+                </label>
+                <label><span data-i18n="rfq.material"></span>
+                  <select name="material" id="material">
+                    <option value="steel" data-i18n="rfq.mat.steel">Steel</option>
+                    <option value="stainless" data-i18n="rfq.mat.stainless">Stainless</option>
+                    <option value="aluminium" data-i18n="rfq.mat.aluminium">Aluminium</option>
+                    <option value="brass" data-i18n="rfq.mat.brass">Brass</option>
+                    <option value="pom" data-i18n="rfq.mat.pom">POM</option>
+                    <option value="ptfe" data-i18n="rfq.mat.ptfe">PTFE</option>
+                    <option value="pa6" data-i18n="rfq.mat.pa6">PA6</option>
+                    <option value="pvc" data-i18n="rfq.mat.pvc">PVC</option>
+                    <option value="other" data-i18n="rfq.mat.other">Other</option>
+                  </select>
+                </label>
+                <label><span data-i18n="rfq.heat"></span>
+                  <select name="heat" id="heat">
+                    <option value="none" data-i18n="rfq.heat.none">None</option>
+                    <option value="qt" data-i18n="rfq.heat.qt">Quenching & tempering</option>
+                    <option value="case" data-i18n="rfq.heat.case">Case hardening</option>
+                    <option value="stress" data-i18n="rfq.heat.stress">Stress relief</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-grid" data-step="2" hidden>
+                <div class="drop" id="drop" tabindex="0">
+                  <strong data-i18n="rfq.drop">Drop files here or browse</strong>
+                  <p data-i18n="rfq.uploadHint"></p>
+                  <input type="file" id="files" multiple accept=".step,.stp,.iges,.igs,.dwg,.dxf,.pdf,.zip" hidden />
+                  <button type="button" class="cta-ghost" id="browse" data-i18n="rfq.browse">Browse files</button>
+                  <p class="lock" data-i18n="rfq.encrypted"></p>
+                  <ul class="file-list" id="file-list"></ul>
+                </div>
+              </div>
+              <div class="form-grid" data-step="3" hidden>
+                <label><span data-i18n="rfq.company"></span><input name="company" id="company" autocomplete="organization" required /><small class="err" data-err="company"></small></label>
+                <label><span data-i18n="rfq.tax"></span><input name="tax" id="tax" autocomplete="off" /></label>
+                <label><span data-i18n="rfq.engineer"></span><input name="engineer" id="engineer" autocomplete="name" required /><small class="err" data-err="engineer"></small></label>
+                <label><span data-i18n="rfq.email"></span><input name="email" id="email" type="email" autocomplete="email" required /><small class="err" data-err="email"></small></label>
+                <label><span data-i18n="rfq.phone"></span><input name="phone" id="phone" type="tel" autocomplete="tel" required /><small class="err" data-err="phone"></small></label>
+                <label><span data-i18n="rfq.date"></span><input name="date" id="date" type="date" required /><small class="err" data-err="date"></small></label>
+                <label class="span-all"><span data-i18n="rfq.notes"></span><textarea name="notes" id="notes" maxlength="1200"></textarea></label>
+                <label class="gdpr-row">
+                  <input type="checkbox" id="gdpr" required />
+                  <span data-i18n="rfq.gdpr"></span>
+                </label>
+                <small class="err" data-err="gdpr"></small>
+                <small class="err" data-err="form"></small>
+              </div>
+              <div class="success" id="rfq-success" hidden>
+                <h3 data-i18n="rfq.success"></h3>
+                <p data-i18n="rfq.successBody"></p>
+                <p class="lock" id="rfq-sent-note"></p>
+                <div class="rfq-nav">
+                  <button type="button" class="cta-ghost" id="rfq-copy" data-i18n="rfq.copy">Copy request text</button>
+                  <button type="button" class="cta-ghost" id="rfq-reset" data-i18n="rfq.another"></button>
+                </div>
+              </div>
+              <div class="rfq-nav" id="rfq-nav">
+                <button type="button" class="cta-ghost" id="rfq-back" hidden data-i18n="rfq.back">Back</button>
+                <button type="button" class="cta" id="rfq-next" data-i18n="rfq.next">Continue</button>
+                <button type="submit" class="cta" id="rfq-submit" hidden data-i18n="rfq.submit">Submit RFQ</button>
+              </div>
+              <p class="lock" data-i18n="rfq.responseTime"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="faq.kicker"></span>
+            <h2 data-i18n="faq.title"></h2>
+          </div>
+          <div class="faq">
+            <details><summary data-i18n="faq.1.q"></summary><p data-i18n="faq.1.a"></p></details>
+            <details><summary data-i18n="faq.2.q"></summary><p data-i18n="faq.2.a"></p></details>
+            <details><summary data-i18n="faq.3.q"></summary><p data-i18n="faq.3.a"></p></details>
+            <details><summary data-i18n="faq.4.q"></summary><p data-i18n="faq.4.a"></p></details>
+            <details><summary data-i18n="faq.5.q"></summary><p data-i18n="faq.5.a"></p></details>
+            <details><summary data-i18n="faq.6.q"></summary><p data-i18n="faq.6.a"></p></details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker" data-i18n="contact.kicker"></span>
+            <h2 data-i18n="contact.title"></h2>
+            <p class="lead" data-i18n="contact.lead"></p>
+          </div>
+          <div class="contact-grid">
+            <dl class="contact-card">
+              <dt data-i18n="contact.company"></dt>
+              <dd>CUI RO18205726</dd>
+              <dt data-i18n="contact.address"></dt>
+              <dd data-i18n="contact.addressValue"></dd>
+              <dt data-i18n="contact.email"></dt>
+              <dd><a href="mailto:rfq@metalprodservice.com">rfq@metalprodservice.com</a><br /><a href="mailto:contact@metalprodservice.com">contact@metalprodservice.com</a></dd>
+              <dt data-i18n="contact.phone"></dt>
+              <dd data-i18n="contact.phoneValue"></dd>
+              <dt data-i18n="contact.hours"></dt>
+              <dd data-i18n="contact.hoursValue"></dd>
+              <dd data-i18n="contact.hoursSat"></dd>
+              <div class="hero-actions contact-actions">
+                <a class="cta" href="mailto:rfq@metalprodservice.com" data-i18n="contact.call"></a>
+                <a class="cta-ghost" href="#rfq" data-i18n="cta.quote"></a>
+              </div>
+            </dl>
+            <div class="map-wrap">
+              <iframe
+                class="map"
+                title="Factory map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                sandbox="allow-scripts allow-same-origin allow-popups"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=22.86%2C47.74%2C22.91%2C47.77&amp;layer=mapnik&amp;marker=47.753%2C22.886"
+              ></iframe>
+              <a class="cta-ghost" href="https://www.openstreetmap.org/?mlat=47.753&amp;mlon=22.886#map=15/47.753/22.886" target="_blank" rel="noopener noreferrer" data-i18n="contact.map">Interactive map</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap foot">
+        <div>
+          <strong>METAL PROD SERVICE</strong>
+          <p data-i18n="footer.tagline"></p>
+          <p data-i18n="footer.iso"></p>
+        </div>
+        <div>
+          <a href="#about" data-i18n="nav.about"></a><br />
+          <a href="#services" data-i18n="nav.services"></a><br />
+          <a href="#catalogue" data-i18n="nav.catalogue"></a><br />
+          <a href="#equipment" data-i18n="nav.equipment"></a>
+        </div>
+        <div>
+          <a href="#rfq" data-i18n="cta.quote"></a><br />
+          <a href="#contact" data-i18n="nav.contact"></a><br />
+          <button class="nav-btn" id="privacy-btn" type="button" data-i18n="footer.privacy"></button><br />
+          <button class="nav-btn" id="terms-btn" type="button" data-i18n="footer.terms"></button>
+        </div>
+      </div>
+      <div class="wrap legal">
+        <span data-i18n="footer.rights"></span>
+      </div>
+    </footer>
+
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a href="#top" data-i18n="mobile.home">Home</a>
+      <a href="#services" data-i18n="mobile.services">Services</a>
+      <a href="#rfq" data-i18n="mobile.quote">Quote</a>
+      <a href="#catalogue" data-i18n="mobile.catalogue">Catalog</a>
+      <a href="#contact" data-i18n="mobile.contact">Contact</a>
+    </nav>
+
+    <div class="cookie" id="cookie" role="dialog" aria-labelledby="cookie-title">
+      <strong id="cookie-title" data-i18n="cookie.title"></strong>
+      <p data-i18n="cookie.body"></p>
+      <div class="cookie-actions">
+        <button class="cta" type="button" id="cookie-accept" data-i18n="cookie.accept"></button>
+        <button class="cta-ghost" type="button" id="cookie-reject" data-i18n="cookie.reject"></button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <div class="modal-card">
+        <h3 id="modal-title"></h3>
+        <p id="modal-body"></p>
+        <button class="cta" type="button" id="modal-close" data-i18n="header.close">Close</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
